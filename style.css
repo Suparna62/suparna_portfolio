@@ -1,0 +1,180 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f3f4f6, #e0ecfc);
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+#hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(145deg, #d8eafd, #ffffff);
+  color: #0f172a;
+}
+
+#hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1d4ed8;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+/* Section Styles */
+section {
+  padding: 2.5rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+  border-left: 6px solid #3b82f6;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* Skills & Certifications */
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+
+/* Projects */
+.project {
+  background: #ffffff;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.2);
+}
+
+.project h3 {
+  color: #1d4ed8;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact */
+#contact a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #1e40af;
+}
+
+/* Glowing Button */
+.glow-button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 15px #3b82f6;
+  transition: background-color 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 0 20px #60a5fa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 2px solid #3b82f6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  #hero h2 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+}
